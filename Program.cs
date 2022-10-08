@@ -66,6 +66,7 @@ foreach (var item in twinNumbers)
     skip2++;
     skip3++;
     skip4++;
+    
     var nextItem = twinNumbers.Skip(skip2).FirstOrDefault();
     var nextItem2 = twinNumbers.Skip(skip3).FirstOrDefault();
     var nextItem3 = twinNumbers.Skip(skip4).FirstOrDefault();
