@@ -23,7 +23,6 @@ for (int i = 2; i <= n; i++)
         {
             isPrime = true;
         }
- 
     }
     
     if (isPrime == true)
@@ -43,7 +42,8 @@ foreach (var item in numbers)
 {
     skip++;
     var nextItem = numbers.Skip(skip).FirstOrDefault();
-    if(nextItem >= lastNum)
+
+    if (nextItem >= lastNum)
         break;
     else if (nextItem - item == 2)
     {
@@ -71,8 +71,8 @@ foreach (var item in twinNumbers)
     var nextItem2 = twinNumbers.Skip(skip3).FirstOrDefault();
     var nextItem3 = twinNumbers.Skip(skip4).FirstOrDefault();
 
-    if(nextItem3 >= lastTwinNum)
+    if (nextItem3 >= lastTwinNum)
         break;
-    else if(nextItem2 - item == 6 && nextItem3 - item == 8)
+    else if (nextItem2 - item == 6 && nextItem3 - item == 8)
         Console.Write($"[{item}, {nextItem}, {nextItem2}, {nextItem3}] ");
 }   
